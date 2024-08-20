@@ -1,6 +1,6 @@
 function Header() {
   return (
-    <header className="bg-white shadow-md py-4 px-8 flex flex-col sm:flex-row justify-between items-center">
+    <header className="bg-white shadow-md py-4 px-4 sm:px-8 lg:px-16 flex flex-col sm:flex-row justify-between items-center">
       {/* Sol Taraf: Logo */}
       <div className="text-blue-600 text-2xl font-bold mb-4 sm:mb-0">
         MORENT
