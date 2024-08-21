@@ -1,7 +1,7 @@
-import car3 from "../assets/car3.png";
-import car4 from "../assets/car4.png";
-import car5 from "../assets/car5.png";
-import car6 from "../assets/car6.png";
+import car3 from "../../assets/car3.png";
+import car4 from "../../assets/car4.png";
+import car5 from "../../assets/car5.png";
+import car6 from "../../assets/car6.png";
 
 function PopularCarsSection() {
   const cars = [

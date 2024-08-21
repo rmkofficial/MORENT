@@ -1,8 +1,8 @@
-import HeroSection from "./HeroSection";
-import RentSection from "./RentSection";
-import PopularCarsSection from "./PopularCarsSection";
-import RecommendationCarsSection from "./RecommendationCarsSection";
-import ShowMoreSection from "./ShowMoreSection";
+import HeroSection from "./Content/HeroSection";
+import RentSection from "./Content/RentSection";
+import PopularCarsSection from "./Content/PopularCarsSection";
+import RecommendationCarsSection from "./Content/RecommendationCarsSection";
+import ShowMoreSection from "./Content/ShowMoreSection";
 
 function Content() {
   return (

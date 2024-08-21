@@ -1,11 +1,11 @@
-import car7 from "../assets/car7.png";
-import car8 from "../assets/car8.png";
-import car9 from "../assets/car9.png";
-import car10 from "../assets/car10.png";
-import car11 from "../assets/car11.png";
-import car12 from "../assets/car12.png";
-import car13 from "../assets/car13.png";
-import car14 from "../assets/car14.png";
+import car7 from "../../assets/car7.png";
+import car8 from "../../assets/car8.png";
+import car9 from "../../assets/car9.png";
+import car10 from "../../assets/car10.png";
+import car11 from "../../assets/car11.png";
+import car12 from "../../assets/car12.png";
+import car13 from "../../assets/car13.png";
+import car14 from "../../assets/car14.png";
 
 function RecommendationCarsSection() {
   const cars = [
