@@ -1,4 +1,26 @@
 {
+  "heroSection": [
+    {
+      "id": 1,
+      "title": "The Best Platform for Car Rental",
+      "description": "Ease of doing car rental safely and reliably. Of course at a low price.",
+      "buttonText": "Rental Car",
+      "image": "/src/assets/car1.png",
+      "bgColor": "bg-blue-600",
+      "buttonBgColor": "bg-blue-500",
+      "buttonBorderColor": "border-blue-600"
+    },
+    {
+      "id": 2,
+      "title": "Easy way to rent a car at a low price",
+      "description": "Providing cheap car rental services and safe and comfortable facilities.",
+      "buttonText": "Rental Car",
+      "image": "/src/assets/car2.png",
+      "bgColor": "bg-blue-500",
+      "buttonBgColor": "bg-blue-600",
+      "buttonBorderColor": "border-blue-500"
+    }
+  ],
   "popularCars": [
     {
       "id": 1,
@@ -43,6 +65,104 @@
       "price": 80,
       "discount": 100,
       "image": "/src/assets/car6.png"
+    }
+  ],
+  "recommendedCars": [
+    {
+      "id": 1,
+      "name": "All New Rush",
+      "type": "SUV",
+      "capacity": "6 People",
+      "transmission": "Manual",
+      "fuel": "70L",
+      "price": "$72.00/day",
+      "oldPrice": "$80.00",
+      "isFavorite": false,
+      "image": "/src/assets/car7.png"
+    },
+    {
+      "id": 2,
+      "name": "CR - V",
+      "type": "SUV",
+      "capacity": "6 People",
+      "transmission": "Manual",
+      "fuel": "80L",
+      "price": "$80.00/day",
+      "oldPrice": null,
+      "isFavorite": true,
+      "image": "/src/assets/car8.png"
+    },
+    {
+      "id": 3,
+      "name": "All New Terios",
+      "type": "SUV",
+      "capacity": "6 People",
+      "transmission": "Manual",
+      "fuel": "90L",
+      "price": "$74.00/day",
+      "oldPrice": null,
+      "isFavorite": false,
+      "image": "/src/assets/car9.png"
+    },
+    {
+      "id": 4,
+      "name": "CR - V",
+      "type": "SUV",
+      "capacity": "6 People",
+      "transmission": "Manual",
+      "fuel": "80L",
+      "price": "$80.00/day",
+      "oldPrice": null,
+      "isFavorite": false,
+      "image": "/src/assets/car10.png"
+    },
+    {
+      "id": 5,
+      "name": "MG ZX Exclucise",
+      "type": "Hatchback",
+      "capacity": "4 People",
+      "transmission": "Manual",
+      "fuel": "70L",
+      "price": "$76.00/day",
+      "oldPrice": "$80.00",
+      "isFavorite": true,
+      "image": "/src/assets/car11.png"
+    },
+    {
+      "id": 6,
+      "name": "New MG ZS",
+      "type": "SUV",
+      "capacity": "6 People",
+      "transmission": "Manual",
+      "fuel": "80L",
+      "price": "$80.00/day",
+      "oldPrice": null,
+      "isFavorite": false,
+      "image": "/src/assets/car12.png"
+    },
+    {
+      "id": 7,
+      "name": "MG ZX Excite",
+      "type": "Hatchback",
+      "capacity": "4 People",
+      "transmission": "Manual",
+      "fuel": "90L",
+      "price": "$74.00/day",
+      "oldPrice": null,
+      "isFavorite": true,
+      "image": "/src/assets/car13.png"
+    },
+    {
+      "id": 8,
+      "name": "New MG ZS",
+      "type": "SUV",
+      "capacity": "6 People",
+      "transmission": "Manual",
+      "fuel": "80L",
+      "price": "$80.00/day",
+      "oldPrice": null,
+      "isFavorite": false,
+      "image": "/src/assets/car14.png"
     }
   ]
 }
