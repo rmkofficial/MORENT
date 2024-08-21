@@ -56,7 +56,7 @@ function RentSection() {
 
         {/* Arrows */}
         <div className="flex justify-center items-center my-4 md:my-0">
-          <button className="bg-blue-500 text-white p-4 rounded-full shadow-lg transform md:rotate-0 rotate-90">
+          <button className="bg-blue-500 text-white p-4 rounded-lg shadow-lg transform md:rotate-0 rotate-90 hover:bg-blue-600 transition-all duration-200 w-16 h-16 flex items-center justify-center">
             <span className="material-icons">swap_vert</span>
           </button>
         </div>
