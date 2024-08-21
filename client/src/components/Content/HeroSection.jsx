@@ -38,7 +38,7 @@ function HeroSection() {
               <h2 className="text-2xl font-bold mb-2">{card.title}</h2>
               <p className="mb-4">{card.description}</p>
               <button
-                className={`${card.buttonBgColor} text-white py-2 px-4 rounded-full font-semibold ${card.buttonBorderColor}`}
+                className={`${card.buttonBgColor} text-white py-2 px-4 rounded-full font-semibold ${card.buttonBorderColor} hover:bg-blue-800 hover:bg-blue-800 transition duration-200`}
               >
                 {card.buttonText}
               </button>
