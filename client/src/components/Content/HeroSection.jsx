@@ -8,7 +8,7 @@ function HeroSection() {
       bgColor: "bg-blue-400",
       buttonBgColor: "bg-blue-500",
       buttonBorderColor: "border-blue-600",
-      image: "/src/assets/car1.png",
+      image: "/assets/car1.png",
     },
     {
       title: "Easy way to rent a car at a low price",
@@ -18,7 +18,7 @@ function HeroSection() {
       bgColor: "bg-blue-600",
       buttonBgColor: "bg-blue-700",
       buttonBorderColor: "border-blue-800",
-      image: "/src/assets/car2.png",
+      image: "/assets/car2.png",
     },
   ];
 

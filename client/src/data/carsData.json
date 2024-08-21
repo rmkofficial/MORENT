@@ -10,7 +10,7 @@
       "fuel": "90L",
       "price": 99,
       "discount": null,
-      "image": "/src/assets/car3.png"
+      "image": "/assets/car3.png"
     },
     {
       "id": 2,
@@ -21,7 +21,7 @@
       "fuel": "80L",
       "price": 80,
       "discount": 100,
-      "image": "/src/assets/car4.png"
+      "image": "/assets/car4.png"
     },
     {
       "id": 3,
@@ -32,7 +32,7 @@
       "fuel": "70L",
       "price": 96,
       "discount": null,
-      "image": "/src/assets/car5.png"
+      "image": "/assets/car5.png"
     },
     {
       "id": 4,
@@ -43,7 +43,7 @@
       "fuel": "80L",
       "price": 80,
       "discount": 100,
-      "image": "/src/assets/car6.png"
+      "image": "/assets/car6.png"
     }
   ],
   "recommendedCars": [
@@ -57,7 +57,7 @@
       "price": "$72.00/day",
       "oldPrice": "$80.00",
       "isFavorite": false,
-      "image": "/src/assets/car7.png"
+      "image": "/assets/car7.png"
     },
     {
       "id": 2,
@@ -69,7 +69,7 @@
       "price": "$80.00/day",
       "oldPrice": null,
       "isFavorite": true,
-      "image": "/src/assets/car8.png"
+      "image": "/assets/car8.png"
     },
     {
       "id": 3,
@@ -81,7 +81,7 @@
       "price": "$74.00/day",
       "oldPrice": null,
       "isFavorite": false,
-      "image": "/src/assets/car9.png"
+      "image": "/assets/car9.png"
     },
     {
       "id": 4,
@@ -93,7 +93,7 @@
       "price": "$80.00/day",
       "oldPrice": null,
       "isFavorite": false,
-      "image": "/src/assets/car10.png"
+      "image": "/assets/car10.png"
     },
     {
       "id": 5,
@@ -105,7 +105,7 @@
       "price": "$76.00/day",
       "oldPrice": "$80.00",
       "isFavorite": true,
-      "image": "/src/assets/car11.png"
+      "image": "/assets/car11.png"
     },
     {
       "id": 6,
@@ -117,7 +117,7 @@
       "price": "$80.00/day",
       "oldPrice": null,
       "isFavorite": false,
-      "image": "/src/assets/car12.png"
+      "image": "/assets/car12.png"
     },
     {
       "id": 7,
@@ -129,7 +129,7 @@
       "price": "$74.00/day",
       "oldPrice": null,
       "isFavorite": true,
-      "image": "/src/assets/car13.png"
+      "image": "/assets/car13.png"
     },
     {
       "id": 8,
@@ -141,7 +141,7 @@
       "price": "$80.00/day",
       "oldPrice": null,
       "isFavorite": false,
-      "image": "/src/assets/car14.png"
+      "image": "/assets/car14.png"
     }
   ]
 }

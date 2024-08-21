@@ -1,4 +1,4 @@
-import profileImage from "../assets/profile.png";
+import profileImage from "/assets/profile.png";
 
 function Header() {
   return (
