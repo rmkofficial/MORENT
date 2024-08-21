@@ -28,7 +28,11 @@ function HeroSection() {
         {heroCards.map((card, index) => (
           <div
             key={index}
-            className={`${card.bgColor} text-white p-6 rounded-lg flex flex-col justify-between relative w-full sm:w-3/5 h-96`}
+            className={`${
+              card.bgColor
+            } text-white p-6 rounded-lg flex flex-col justify-between relative w-full sm:w-3/5 h-96 ${
+              index === 1 ? "hidden sm:block" : ""
+            }`}
           >
             <div className="text-left w-full sm:max-w-[50%]">
               <h2 className="text-2xl font-bold mb-2">{card.title}</h2>

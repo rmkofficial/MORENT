@@ -1,15 +1,4 @@
-import { useState } from "react";
-import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
-import Sidebar from "./Sidebar";
-
 function Header() {
-  const [isDrawerOpen, setDrawerOpen] = useState(false);
-
-  const toggleDrawer = () => {
-    setDrawerOpen(!isDrawerOpen);
-  };
-
   return (
     <header className="bg-white shadow-md py-4 px-4 sm:px-8 lg:px-16 flex flex-col sm:flex-row justify-between items-center">
       {/* Sol Taraf: Logo */}
@@ -25,9 +14,9 @@ function Header() {
           placeholder="Search something here"
           className="bg-gray-100 outline-none flex-grow"
         />
-        <IconButton onClick={toggleDrawer}>
-          <MenuIcon className="text-gray-400 ml-2" />
-        </IconButton>
+        <span className="material-icons text-gray-400 ml-2 cursor-pointer">
+          tune
+        </span>
       </div>
 
       {/* Sağ Taraf: İkonlar */}
@@ -48,9 +37,6 @@ function Header() {
           className="w-10 h-10 rounded-full"
         />
       </div>
-
-      {/* Sidebar'ı buraya ekleyin */}
-      <Sidebar isOpen={isDrawerOpen} toggleSidebar={toggleDrawer} />
     </header>
   );
 }
