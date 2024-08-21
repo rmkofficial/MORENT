@@ -1,8 +1,10 @@
+import profileImage from "../assets/profile.png";
+
 function Header() {
   return (
-    <header className="bg-white shadow-md py-4 px-4 sm:px-8 lg:px-16 flex flex-col sm:flex-row justify-between items-center">
+    <header className="bg-white shadow-md py-6 px-4 sm:px-8 lg:px-16 flex flex-col sm:flex-row justify-between items-center">
       {/* Sol Taraf: Logo */}
-      <div className="text-blue-600 text-2xl font-bold mb-4 sm:mb-0">
+      <div className="text-blue-600 text-2xl font-bold mb-4 sm:mb-0 cursor-pointer">
         MORENT
       </div>
 
@@ -12,7 +14,7 @@ function Header() {
         <input
           type="text"
           placeholder="Search something here"
-          className="bg-gray-100 outline-none flex-grow"
+          className="bg-gray-100 outline-none flex-grow focus:bg-white transition-colors duration-200"
         />
         <span className="material-icons text-gray-400 ml-2 cursor-pointer">
           tune
@@ -20,21 +22,21 @@ function Header() {
       </div>
 
       {/* Sağ Taraf: İkonlar */}
-      <div className="flex items-center space-x-6">
-        <span className="hidden sm:inline-block material-icons text-gray-500">
-          favorite
-        </span>
-        <span className="hidden sm:inline-block material-icons text-gray-500 relative">
-          notifications
-          <span className="absolute top-0 right-0 h-2 w-2 bg-red-500 rounded-full"></span>
-        </span>
-        <span className="hidden sm:inline-block material-icons text-gray-500">
-          settings
-        </span>
+      <div className="flex items-center space-x-4">
+        <div className="relative flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-200 transition duration-200 cursor-pointer hidden sm:flex">
+          <span className="material-icons text-gray-500">favorite</span>
+        </div>
+        <div className="relative flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-200 transition duration-200 cursor-pointer hidden sm:flex">
+          <span className="material-icons text-gray-500">notifications</span>
+          <span className="absolute top-1 right-1 h-2 w-2 bg-red-500 rounded-full"></span>
+        </div>
+        <div className="relative flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-200 transition duration-200 cursor-pointer hidden sm:flex">
+          <span className="material-icons text-gray-500">settings</span>
+        </div>
         <img
-          src="https://via.placeholder.com/40"
+          src={profileImage}
           alt="User"
-          className="w-10 h-10 rounded-full"
+          className="w-10 h-10 rounded-full cursor-pointer"
         />
       </div>
     </header>
