@@ -1,7 +1,26 @@
-import carsData from "../../data/carsData.json";
-
 function HeroSection() {
-  const heroCards = carsData.heroSection || [];
+  const heroCards = [
+    {
+      title: "The Best Platform for Car Rental",
+      description:
+        "Ease of doing car rental safely and reliably. Of course at a low price.",
+      buttonText: "Rental Car",
+      bgColor: "bg-blue-400",
+      buttonBgColor: "bg-blue-500",
+      buttonBorderColor: "border-blue-600",
+      image: "/src/assets/car1.png",
+    },
+    {
+      title: "Easy way to rent a car at a low price",
+      description:
+        "Providing cheap car rental services and safe and comfortable facilities.",
+      buttonText: "Rental Car",
+      bgColor: "bg-blue-600",
+      buttonBgColor: "bg-blue-700",
+      buttonBorderColor: "border-blue-800",
+      image: "/src/assets/car2.png",
+    },
+  ];
 
   return (
     <section className="bg-gray-100 py-8 px-4 sm:px-8 lg:px-16">

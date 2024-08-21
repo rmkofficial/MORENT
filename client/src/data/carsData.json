@@ -1,26 +1,5 @@
 {
-  "heroSection": [
-    {
-      "id": 1,
-      "title": "The Best Platform for Car Rental",
-      "description": "Ease of doing car rental safely and reliably. Of course at a low price.",
-      "buttonText": "Rental Car",
-      "image": "/src/assets/car1.png",
-      "bgColor": "bg-blue-600",
-      "buttonBgColor": "bg-blue-500",
-      "buttonBorderColor": "border-blue-600"
-    },
-    {
-      "id": 2,
-      "title": "Easy way to rent a car at a low price",
-      "description": "Providing cheap car rental services and safe and comfortable facilities.",
-      "buttonText": "Rental Car",
-      "image": "/src/assets/car2.png",
-      "bgColor": "bg-blue-500",
-      "buttonBgColor": "bg-blue-600",
-      "buttonBorderColor": "border-blue-500"
-    }
-  ],
+  
   "popularCars": [
     {
       "id": 1,
