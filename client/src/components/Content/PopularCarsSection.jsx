@@ -1,55 +1,7 @@
-import car3 from "../../assets/car3.png";
-import car4 from "../../assets/car4.png";
-import car5 from "../../assets/car5.png";
-import car6 from "../../assets/car6.png";
+import carsData from "../../data/carsData.json";
 
 function PopularCarsSection() {
-  const cars = [
-    {
-      name: "Koenigsegg",
-      type: "Sport",
-      image: car3,
-      fuel: "90L",
-      transmission: "Manual",
-      capacity: "2 People",
-      price: "$99.00/day",
-      oldPrice: null,
-      isFavorite: true,
-    },
-    {
-      name: "Nissan GT - R",
-      type: "Sport",
-      image: car4,
-      fuel: "80L",
-      transmission: "Manual",
-      capacity: "2 People",
-      price: "$80.00/day",
-      oldPrice: "$100.00",
-      isFavorite: false,
-    },
-    {
-      name: "Rolls - Royce",
-      type: "Sedan",
-      image: car5,
-      fuel: "70L",
-      transmission: "Manual",
-      capacity: "4 People",
-      price: "$96.00/day",
-      oldPrice: null,
-      isFavorite: true,
-    },
-    {
-      name: "Nissan GT - R",
-      type: "Sport",
-      image: car6,
-      fuel: "80L",
-      transmission: "Manual",
-      capacity: "2 People",
-      price: "$80.00/day",
-      oldPrice: "$100.00",
-      isFavorite: false,
-    },
-  ];
+  const cars = carsData?.popularCars || [];
 
   return (
     <section className="bg-gray-100 py-8 px-4 sm:px-8 lg:px-16">
@@ -95,11 +47,11 @@ function PopularCarsSection() {
             <div className="flex justify-between items-center">
               <div>
                 <span className="text-lg font-bold text-gray-800">
-                  {car.price}
+                  ${car.price}.00/day
                 </span>
-                {car.oldPrice && (
+                {car.discount && (
                   <span className="text-sm text-gray-500 line-through ml-2">
-                    {car.oldPrice}
+                    ${car.discount}.00
                   </span>
                 )}
               </div>
