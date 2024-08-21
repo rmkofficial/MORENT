@@ -1,5 +1,4 @@
 {
-  
   "popularCars": [
     {
       "id": 1,
@@ -57,7 +56,7 @@
       "price": "$72.00/day",
       "oldPrice": "$80.00",
       "isFavorite": false,
-      "image": "/assets/car7.png"
+      "image": "/assets/Car7.png"
     },
     {
       "id": 2,
@@ -69,7 +68,7 @@
       "price": "$80.00/day",
       "oldPrice": null,
       "isFavorite": true,
-      "image": "/assets/car8.png"
+      "image": "/assets/Car8.png"
     },
     {
       "id": 3,
@@ -81,7 +80,7 @@
       "price": "$74.00/day",
       "oldPrice": null,
       "isFavorite": false,
-      "image": "/assets/car9.png"
+      "image": "/assets/Car9.png"
     },
     {
       "id": 4,
@@ -93,7 +92,7 @@
       "price": "$80.00/day",
       "oldPrice": null,
       "isFavorite": false,
-      "image": "/assets/car10.png"
+      "image": "/assets/Car10.png"
     },
     {
       "id": 5,
@@ -105,7 +104,7 @@
       "price": "$76.00/day",
       "oldPrice": "$80.00",
       "isFavorite": true,
-      "image": "/assets/car11.png"
+      "image": "/assets/Car11.png"
     },
     {
       "id": 6,
@@ -117,7 +116,7 @@
       "price": "$80.00/day",
       "oldPrice": null,
       "isFavorite": false,
-      "image": "/assets/car12.png"
+      "image": "/assets/Car12.png"
     },
     {
       "id": 7,
@@ -129,7 +128,7 @@
       "price": "$74.00/day",
       "oldPrice": null,
       "isFavorite": true,
-      "image": "/assets/car13.png"
+      "image": "/assets/Car13.png"
     },
     {
       "id": 8,
@@ -141,7 +140,7 @@
       "price": "$80.00/day",
       "oldPrice": null,
       "isFavorite": false,
-      "image": "/assets/car14.png"
+      "image": "/assets/Car14.png"
     }
   ]
 }
