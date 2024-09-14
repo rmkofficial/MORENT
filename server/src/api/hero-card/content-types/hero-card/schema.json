@@ -4,7 +4,8 @@
   "info": {
     "singularName": "hero-card",
     "pluralName": "hero-cards",
-    "displayName": "Hero Card"
+    "displayName": "Hero Card",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,14 +19,15 @@
       "type": "string"
     },
     "Image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     }
   }
 }

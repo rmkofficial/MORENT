@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "popular_cars",
+  "info": {
+    "singularName": "popular-car",
+    "pluralName": "popular-cars",
+    "displayName": "Popular Cars"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "Type": {
+      "type": "string"
+    },
+    "Fuel": {
+      "type": "string"
+    },
+    "Transmission": {
+      "type": "string"
+    },
+    "Capacity": {
+      "type": "integer"
+    },
+    "Price": {
+      "type": "integer"
+    },
+    "Discount": {
+      "type": "integer"
+    },
+    "IsFavorite": {
+      "type": "boolean"
+    }
+  }
+}

@@ -368,6 +368,7 @@ export interface ApiHeroCardHeroCard extends Schema.CollectionType {
     singularName: 'hero-card';
     pluralName: 'hero-cards';
     displayName: 'Hero Card';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -387,6 +388,44 @@ export interface ApiHeroCardHeroCard extends Schema.CollectionType {
       Attribute.Private;
     updatedBy: Attribute.Relation<
       'api::hero-card.hero-card',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiPopularCarPopularCar extends Schema.CollectionType {
+  collectionName: 'popular_cars';
+  info: {
+    singularName: 'popular-car';
+    pluralName: 'popular-cars';
+    displayName: 'Popular Cars';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Name: Attribute.String;
+    Image: Attribute.Media<'images' | 'files' | 'videos' | 'audios', true>;
+    Type: Attribute.String;
+    Fuel: Attribute.String;
+    Transmission: Attribute.String;
+    Capacity: Attribute.Integer;
+    Price: Attribute.Integer;
+    Discount: Attribute.Integer;
+    IsFavorite: Attribute.Boolean;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::popular-car.popular-car',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::popular-car.popular-car',
       'oneToOne',
       'admin::user'
     > &
@@ -831,6 +870,7 @@ declare module '@strapi/types' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'api::hero-card.hero-card': ApiHeroCardHeroCard;
+      'api::popular-car.popular-car': ApiPopularCarPopularCar;
       'plugin::upload.file': PluginUploadFile;
       'plugin::upload.folder': PluginUploadFolder;
       'plugin::content-releases.release': PluginContentReleasesRelease;
