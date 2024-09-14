@@ -56,7 +56,11 @@ function PopularCarsSection() {
   }
 
   if (status === "failed") {
-    return <div>Error loading popular cars.</div>;
+    return (
+      <section className="bg-gray-100 py-8 px-4 sm:px-8 lg:px-16">
+        {renderSkeletons()}
+      </section>
+    );
   }
 
   return (

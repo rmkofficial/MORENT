@@ -362,77 +362,6 @@ export interface AdminTransferTokenPermission extends Schema.CollectionType {
   };
 }
 
-export interface ApiHeroCardHeroCard extends Schema.CollectionType {
-  collectionName: 'hero_cards';
-  info: {
-    singularName: 'hero-card';
-    pluralName: 'hero-cards';
-    displayName: 'Hero Card';
-    description: '';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    Title: Attribute.String;
-    Description: Attribute.String;
-    Image: Attribute.Media<'images' | 'files' | 'videos' | 'audios', true>;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::hero-card.hero-card',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::hero-card.hero-card',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-export interface ApiPopularCarPopularCar extends Schema.CollectionType {
-  collectionName: 'popular_cars';
-  info: {
-    singularName: 'popular-car';
-    pluralName: 'popular-cars';
-    displayName: 'Popular Cars';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    Name: Attribute.String;
-    Image: Attribute.Media<'images' | 'files' | 'videos' | 'audios', true>;
-    Type: Attribute.String;
-    Fuel: Attribute.String;
-    Transmission: Attribute.String;
-    Capacity: Attribute.Integer;
-    Price: Attribute.Integer;
-    Discount: Attribute.Integer;
-    IsFavorite: Attribute.Boolean;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::popular-car.popular-car',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::popular-car.popular-car',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
 export interface PluginUploadFile extends Schema.CollectionType {
   collectionName: 'files';
   info: {
@@ -859,6 +788,115 @@ export interface PluginI18NLocale extends Schema.CollectionType {
   };
 }
 
+export interface ApiHeroCardHeroCard extends Schema.CollectionType {
+  collectionName: 'hero_cards';
+  info: {
+    singularName: 'hero-card';
+    pluralName: 'hero-cards';
+    displayName: 'Hero Card';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Title: Attribute.String;
+    Description: Attribute.String;
+    Image: Attribute.Media<'images' | 'files' | 'videos' | 'audios', true>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::hero-card.hero-card',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::hero-card.hero-card',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiPopularCarPopularCar extends Schema.CollectionType {
+  collectionName: 'popular_cars';
+  info: {
+    singularName: 'popular-car';
+    pluralName: 'popular-cars';
+    displayName: 'Popular Cars';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Name: Attribute.String;
+    Image: Attribute.Media<'images' | 'files' | 'videos' | 'audios', true>;
+    Type: Attribute.String;
+    Fuel: Attribute.String;
+    Transmission: Attribute.String;
+    Capacity: Attribute.Integer;
+    Price: Attribute.Integer;
+    Discount: Attribute.Integer;
+    IsFavorite: Attribute.Boolean;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::popular-car.popular-car',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::popular-car.popular-car',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiRecommendedCarRecommendedCar extends Schema.CollectionType {
+  collectionName: 'recommended_cars';
+  info: {
+    singularName: 'recommended-car';
+    pluralName: 'recommended-cars';
+    displayName: 'Recommended Cars';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Name: Attribute.String;
+    Image: Attribute.Media<'images' | 'files' | 'videos' | 'audios', true>;
+    Type: Attribute.String;
+    Fuel: Attribute.String;
+    Transmission: Attribute.String;
+    Capacity: Attribute.Integer;
+    Price: Attribute.Integer;
+    OldPrice: Attribute.Integer;
+    IsFavorite: Attribute.Boolean;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::recommended-car.recommended-car',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::recommended-car.recommended-car',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -869,8 +907,6 @@ declare module '@strapi/types' {
       'admin::api-token-permission': AdminApiTokenPermission;
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
-      'api::hero-card.hero-card': ApiHeroCardHeroCard;
-      'api::popular-car.popular-car': ApiPopularCarPopularCar;
       'plugin::upload.file': PluginUploadFile;
       'plugin::upload.folder': PluginUploadFolder;
       'plugin::content-releases.release': PluginContentReleasesRelease;
@@ -879,6 +915,9 @@ declare module '@strapi/types' {
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'plugin::i18n.locale': PluginI18NLocale;
+      'api::hero-card.hero-card': ApiHeroCardHeroCard;
+      'api::popular-car.popular-car': ApiPopularCarPopularCar;
+      'api::recommended-car.recommended-car': ApiRecommendedCarRecommendedCar;
     }
   }
 }
