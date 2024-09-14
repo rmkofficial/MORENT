@@ -115,7 +115,7 @@ function PopularCarsSection() {
                   </span>
                 )}
               </div>
-              <button className="bg-blue-500 text-white py-2 px-4 rounded-full font-semibold">
+              <button className="bg-blue-500 text-white py-2 px-4 rounded-full font-semibold hover:bg-blue-600 transition duration-300 ease-in-out">
                 Rent Now
               </button>
             </div>

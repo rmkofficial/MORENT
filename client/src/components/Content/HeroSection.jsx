@@ -83,11 +83,11 @@ function HeroSection() {
               index === 1 ? "hidden sm:block" : ""
             }`}
           >
-            <div className="text-left w-full sm:max-w-[50%]">
-              <h2 className="text-2xl font-bold mb-2">
+            <div className="text-left md:text-center lg:text-left w-full sm:max-w-[50%] md:max-w-full">
+              <h2 className="text-2xl sm:text-3xl md:text-2xl  lg:text-3xl lg:text-white font-bold mb-2">
                 {card.attributes?.Title || "No Title"}{" "}
               </h2>
-              <p className="mb-4">
+              <p className="mb-4  md:text-base lg:text-white">
                 {card.attributes?.Description || "No Description"}{" "}
               </p>
               <button
@@ -107,7 +107,7 @@ function HeroSection() {
                 "/default.png"
               }`}
               alt={`Car ${index + 1}`}
-              className="absolute bottom-6 left-1/2 transform -translate-x-1/2 w-48 sm:w-96 h-auto"
+              className="absolute bottom-6 left-1/2 transform -translate-x-1/2 w-64 sm:w-48 md:w-64 lg:w-96 h-auto"
             />
           </div>
         ))}
